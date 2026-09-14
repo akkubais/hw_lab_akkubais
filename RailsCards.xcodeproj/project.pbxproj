@@ -1,0 +1,616 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		305D60F28991262398ED0C43 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A88DD58689A78BDA72FF5FC /* Foundation.framework */; };
+		3979D7925B269024ED8920A6 /* RailsCardsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F75BED9D3E4F7DA8A90B51A /* RailsCardsUITests.swift */; };
+		53D54BF270CAD1DC90D8D22D /* CardViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F412A827CF6C5B6D723AC1D /* CardViewModelTests.swift */; };
+		5CABCA86619A06C1DC1D41AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A88DD58689A78BDA72FF5FC /* Foundation.framework */; };
+		62820F3ECC7199FFC546F328 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56194EFAEBB2B4524225F678 /* CardView.swift */; };
+		64C31338512C0BF8DADCDCEA /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE1E927164122E3204EB975 /* CardViewModel.swift */; };
+		6C384DABB99974AC0DD41C3F /* DeckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC39401AE930BDB50AAC9B24 /* DeckTests.swift */; };
+		6F863A26FCFA6E1D4219ECB3 /* RailsCardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F088E0DFC0CD4C3717E7D7 /* RailsCardsApp.swift */; };
+		82EA12C6942E8E1B4DAD6ACD /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AA577942A6A71C73CB781A /* Deck.swift */; };
+		AAD5DE5F4FB1529AE946C663 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A88DD58689A78BDA72FF5FC /* Foundation.framework */; };
+		C572CD9452F8F0602110B7E7 /* Flashcard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E8F8F30F91574B622E9972 /* Flashcard.swift */; };
+		E21B00E59CBD05F22347874F /* DefinitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916B6069B9DE04434BC00047 /* DefinitionView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8EC6B1D9B26A944580C5B1CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D086314C546D1CDCD236B03E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9DBD4E900CF7D26A72890E3A;
+			remoteInfo = RailsCards;
+		};
+		BF4676A33BD60A026F638CFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D086314C546D1CDCD236B03E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9DBD4E900CF7D26A72890E3A;
+			remoteInfo = RailsCards;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03AA577942A6A71C73CB781A /* Deck.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
+		0F75BED9D3E4F7DA8A90B51A /* RailsCardsUITests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RailsCardsUITests.swift; sourceTree = "<group>"; };
+		2EE1E927164122E3204EB975 /* CardViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
+		316F417B9AE2C031B6ABF47C /* RailsCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RailsCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		33F088E0DFC0CD4C3717E7D7 /* RailsCardsApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RailsCardsApp.swift; sourceTree = "<group>"; };
+		56194EFAEBB2B4524225F678 /* CardView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		6A88DD58689A78BDA72FF5FC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6F412A827CF6C5B6D723AC1D /* CardViewModelTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CardViewModelTests.swift; sourceTree = "<group>"; };
+		916B6069B9DE04434BC00047 /* DefinitionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DefinitionView.swift; sourceTree = "<group>"; };
+		AC39401AE930BDB50AAC9B24 /* DeckTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DeckTests.swift; sourceTree = "<group>"; };
+		B652EC4E7CB9C0FBBE346986 /* RailsCardsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RailsCardsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C06509F9831A6A42EDEC1569 /* RailsCardsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RailsCardsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8E8F8F30F91574B622E9972 /* Flashcard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Flashcard.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4F7AD58DD20B15C70640C5FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CABCA86619A06C1DC1D41AB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A10CA3DCED42E144CA45F3E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAD5DE5F4FB1529AE946C663 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2448C3417B4348F3C44A20D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				305D60F28991262398ED0C43 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0962336D349D26D5F127BC60 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				316F417B9AE2C031B6ABF47C /* RailsCards.app */,
+				B652EC4E7CB9C0FBBE346986 /* RailsCardsTests.xctest */,
+				C06509F9831A6A42EDEC1569 /* RailsCardsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6640A80DBE6798DADCE93A60 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D8182025CF05E58A4202988 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6D47D607BF2704A452A94BD5 = {
+			isa = PBXGroup;
+			children = (
+				0962336D349D26D5F127BC60 /* Products */,
+				6640A80DBE6798DADCE93A60 /* Frameworks */,
+				7FEDD1AD5C0B04AA95103D9C /* RailsCards */,
+				C22418B230DF1F274F33442B /* RailsCardsTests */,
+				F0BAD0C3D4DD55703903D616 /* RailsCardsUITests */,
+			);
+			sourceTree = "<group>";
+		};
+		7D10CD8A3DA96B10851AC384 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				2EE1E927164122E3204EB975 /* CardViewModel.swift */,
+			);
+			name = ViewModels;
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		7D8182025CF05E58A4202988 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6A88DD58689A78BDA72FF5FC /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7FEDD1AD5C0B04AA95103D9C /* RailsCards */ = {
+			isa = PBXGroup;
+			children = (
+				33F088E0DFC0CD4C3717E7D7 /* RailsCardsApp.swift */,
+				9C3F3A2C232BBAE9E9D4BC18 /* Models */,
+				7D10CD8A3DA96B10851AC384 /* ViewModels */,
+				F1EC7F56AE3450389F096E08 /* Views */,
+			);
+			name = RailsCards;
+			path = RailsCards;
+			sourceTree = "<group>";
+		};
+		9C3F3A2C232BBAE9E9D4BC18 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				03AA577942A6A71C73CB781A /* Deck.swift */,
+				E8E8F8F30F91574B622E9972 /* Flashcard.swift */,
+			);
+			name = Models;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C22418B230DF1F274F33442B /* RailsCardsTests */ = {
+			isa = PBXGroup;
+			children = (
+				6F412A827CF6C5B6D723AC1D /* CardViewModelTests.swift */,
+				AC39401AE930BDB50AAC9B24 /* DeckTests.swift */,
+			);
+			name = RailsCardsTests;
+			path = RailsCardsTests;
+			sourceTree = "<group>";
+		};
+		F0BAD0C3D4DD55703903D616 /* RailsCardsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0F75BED9D3E4F7DA8A90B51A /* RailsCardsUITests.swift */,
+			);
+			name = RailsCardsUITests;
+			path = RailsCardsUITests;
+			sourceTree = "<group>";
+		};
+		F1EC7F56AE3450389F096E08 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				56194EFAEBB2B4524225F678 /* CardView.swift */,
+				916B6069B9DE04434BC00047 /* DefinitionView.swift */,
+			);
+			name = Views;
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D3DA1F8206A4E4E46306287 /* RailsCardsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B02CA46249982D217A2E644 /* Build configuration list for PBXNativeTarget "RailsCardsTests" */;
+			buildPhases = (
+				89EEA594A40557972E67E9C3 /* Sources */,
+				E2448C3417B4348F3C44A20D /* Frameworks */,
+				7C3340DB4BD104103C13146F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E040D08B091A16D8D1DA3542 /* PBXTargetDependency */,
+			);
+			name = RailsCardsTests;
+			productName = RailsCardsTests;
+			productReference = B652EC4E7CB9C0FBBE346986 /* RailsCardsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		858DE5441110E5532CC0F667 /* RailsCardsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A8A97FBB3E62E1C17A60BC0 /* Build configuration list for PBXNativeTarget "RailsCardsUITests" */;
+			buildPhases = (
+				C7614976EE20016A00403077 /* Sources */,
+				A10CA3DCED42E144CA45F3E0 /* Frameworks */,
+				A2D5C42FA29C09D791DD4BA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B0483BD6C8229AAD1AB2D107 /* PBXTargetDependency */,
+			);
+			name = RailsCardsUITests;
+			productName = RailsCardsUITests;
+			productReference = C06509F9831A6A42EDEC1569 /* RailsCardsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		9DBD4E900CF7D26A72890E3A /* RailsCards */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA0BAEE0FD01651454E93807 /* Build configuration list for PBXNativeTarget "RailsCards" */;
+			buildPhases = (
+				F5B3F8D8AEFB4701B788FF6D /* Sources */,
+				4F7AD58DD20B15C70640C5FC /* Frameworks */,
+				165769C17F842B5F9738D68F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RailsCards;
+			productName = RailsCards;
+			productReference = 316F417B9AE2C031B6ABF47C /* RailsCards.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D086314C546D1CDCD236B03E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+			};
+			buildConfigurationList = 9F4575F5EB751086AFA22FAB /* Build configuration list for PBXProject "RailsCards" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6D47D607BF2704A452A94BD5;
+			minimizedProjectReferenceProxies = 0;
+			preferredProjectObjectVersion = 100;
+			productRefGroup = 0962336D349D26D5F127BC60 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9DBD4E900CF7D26A72890E3A /* RailsCards */,
+				1D3DA1F8206A4E4E46306287 /* RailsCardsTests */,
+				858DE5441110E5532CC0F667 /* RailsCardsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		165769C17F842B5F9738D68F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C3340DB4BD104103C13146F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2D5C42FA29C09D791DD4BA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		89EEA594A40557972E67E9C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53D54BF270CAD1DC90D8D22D /* CardViewModelTests.swift in Sources */,
+				6C384DABB99974AC0DD41C3F /* DeckTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7614976EE20016A00403077 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3979D7925B269024ED8920A6 /* RailsCardsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5B3F8D8AEFB4701B788FF6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F863A26FCFA6E1D4219ECB3 /* RailsCardsApp.swift in Sources */,
+				82EA12C6942E8E1B4DAD6ACD /* Deck.swift in Sources */,
+				C572CD9452F8F0602110B7E7 /* Flashcard.swift in Sources */,
+				64C31338512C0BF8DADCDCEA /* CardViewModel.swift in Sources */,
+				62820F3ECC7199FFC546F328 /* CardView.swift in Sources */,
+				E21B00E59CBD05F22347874F /* DefinitionView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B0483BD6C8229AAD1AB2D107 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RailsCards;
+			target = 9DBD4E900CF7D26A72890E3A /* RailsCards */;
+			targetProxy = BF4676A33BD60A026F638CFB /* PBXContainerItemProxy */;
+		};
+		E040D08B091A16D8D1DA3542 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RailsCards;
+			target = 9DBD4E900CF7D26A72890E3A /* RailsCards */;
+			targetProxy = 8EC6B1D9B26A944580C5B1CC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		119A4B872859A033F04DADD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.cmu.RailsCards.RailsCards;
+				SDKROOT = iphoneos;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1386612CD8AAFCC651D31F5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		3329200E5CF0496CF7CC5264 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.cmu.RailsCards.RailsCards;
+				SDKROOT = iphoneos;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6C810BF171D4112FF7A85D8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.cmu.RailsCards.RailsCardsUITests;
+				SDKROOT = iphoneos;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RailsCards;
+			};
+			name = Debug;
+		};
+		A2AFEA96083225E4394859C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B0115AF48682366473C94A20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.cmu.RailsCards.RailsCardsTests;
+				SDKROOT = iphoneos;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RailsCards.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RailsCards";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E0EE8730363A2E060595A3A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.cmu.RailsCards.RailsCardsTests;
+				SDKROOT = iphoneos;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RailsCards.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RailsCards";
+			};
+			name = Debug;
+		};
+		E5ACE7008C58F17A997E5D71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.cmu.RailsCards.RailsCardsUITests;
+				SDKROOT = iphoneos;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RailsCards;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0B02CA46249982D217A2E644 /* Build configuration list for PBXNativeTarget "RailsCardsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0115AF48682366473C94A20 /* Release */,
+				E0EE8730363A2E060595A3A4 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A8A97FBB3E62E1C17A60BC0 /* Build configuration list for PBXNativeTarget "RailsCardsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5ACE7008C58F17A997E5D71 /* Release */,
+				6C810BF171D4112FF7A85D8B /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F4575F5EB751086AFA22FAB /* Build configuration list for PBXProject "RailsCards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2AFEA96083225E4394859C7 /* Debug */,
+				1386612CD8AAFCC651D31F5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA0BAEE0FD01651454E93807 /* Build configuration list for PBXNativeTarget "RailsCards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3329200E5CF0496CF7CC5264 /* Release */,
+				119A4B872859A033F04DADD9 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D086314C546D1CDCD236B03E /* Project object */;
+}

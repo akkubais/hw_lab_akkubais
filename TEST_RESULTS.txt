@@ -1,0 +1,48 @@
+RailsCards Lab 02 - verification record
+Platform: Swift / SwiftUI
+Andrew ID: akkubais
+Date: 2026-09-14
+
+PASS: Xcode 26.6 build-for-testing for arm64 iOS Simulator.
+The RailsCards application, RailsCardsTests unit-test bundle, and
+RailsCardsUITests UI-test bundle compiled successfully.
+Final Xcode result: TEST BUILD SUCCEEDED.
+
+PASS: All five required Swift Testing tests executed successfully on macOS
+using the same Models, ViewModels, and RailsCardsTests source files.
+The Swift package does not compile the SwiftUI views; those were checked
+by the separate iOS Xcode build above.
+
+PENDING: Execution of the app and test bundles on an iPhone simulator.
+PENDING: Actual screenshots of command, matching definition, and new command.
+The preparation environment did not grant CoreSimulator file access, and
+the native Xcode UI connection was unavailable. No UI-test execution,
+simulator screenshots, or Canvas submission is claimed here.
+
+GitHub account verified: akkubais (connector and command-line sign-in).
+Commit identity: Abdulaziz Al Kubaisi <akkubais@andrew.cmu.edu>.
+Repository: akkubais/hw_lab_akkubais.
+Branch: hw_lab2_RailsCards.
+Existing collaborator with write access: a-belard.
+Confirm that a-belard is your assigned CA.
+Existing Lab 1 files and branch are preserved.
+
+Swift Testing execution evidence:
+◇ Test run started.
+↳ Testing Library Version: 1902
+↳ Target Platform: arm64e-apple-macos14.0
+◇ Suite CardViewModelTests started.
+◇ Suite DeckTests started.
+◇ Test drawNewCardChangesCardEventually() started.
+◇ Test initialCardIsFromDeck() started.
+◇ Test drawRandomCardReturnsCardFromDeck() started.
+◇ Test deckHasCards() started.
+◇ Test cardsHaveCommandsAndDefinitions() started.
+✔ Test deckHasCards() passed after 0.001 seconds.
+✔ Test cardsHaveCommandsAndDefinitions() passed after 0.001 seconds.
+✔ Test drawRandomCardReturnsCardFromDeck() passed after 0.001 seconds.
+✔ Suite DeckTests passed after 0.002 seconds.
+✔ Test initialCardIsFromDeck() passed after 0.001 seconds.
+✔ Test drawNewCardChangesCardEventually() passed after 0.002 seconds.
+✔ Suite CardViewModelTests passed after 0.002 seconds.
+✔ Test run with 5 tests in 2 suites passed after 0.002 seconds.
