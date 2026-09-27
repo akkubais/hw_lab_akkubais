@@ -25,7 +25,7 @@ Screenshots of the significant outputs are included in the `Screenshots` folder.
 - Repository: <https://github.com/akkubais/hw_lab_akkubais>
 - Required branch name: `hw_lab4_SimpleBrowser`
 
-The repository branch still needs to be created and pushed before the GitHub link is submitted in Canvas.
+Branch: `hw_lab4_SimpleBrowser`
 
 ## Included evidence
 
