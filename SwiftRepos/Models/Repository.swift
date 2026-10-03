@@ -1,5 +1,6 @@
 import Foundation
 
+/// Contains the GitHub repository fields displayed by the app.
 nonisolated struct Repository: Codable, Identifiable, Hashable, Sendable {
   let id: Int
   let name: String
@@ -7,6 +8,7 @@ nonisolated struct Repository: Codable, Identifiable, Hashable, Sendable {
   let htmlURL: String
   let stargazersCount: Int
 
+  /// Maps GitHub's snake-case JSON keys to Swift-style property names.
   enum CodingKeys: String, CodingKey {
     case id
     case name
@@ -15,4 +17,3 @@ nonisolated struct Repository: Codable, Identifiable, Hashable, Sendable {
     case stargazersCount = "stargazers_count"
   }
 }
-
