@@ -1,8 +1,11 @@
 import SwiftUI
 
+/// Composes the address bar, web content, bottom toolbar, and share sheet.
 struct ContentView: View {
+    /// Owns the browser state for the lifetime of this screen.
     @StateObject private var viewModel = ViewModel()
 
+    /// Builds the main browser layout and presents sharing when requested.
     var body: some View {
         VStack(spacing: 0) {
             SearchBar(viewModel: viewModel)
@@ -21,6 +24,7 @@ struct ContentView: View {
                 .background(.bar)
         }
         .sheet(isPresented: $viewModel.shouldShowShareSheet) {
+            // Share the current URL when available; otherwise explain why sharing is unavailable.
             if let url = viewModel.shareURL {
                 ShareSheet(activityItems: [url])
             } else {
