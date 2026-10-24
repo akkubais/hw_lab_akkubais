@@ -32,3 +32,11 @@ The equality test uses a fixed date to avoid timing-dependent comparisons. Hashi
 This submission uses restricted access rather than the handout's temporary public test rules, as requested. Firebase Authentication assigns an anonymous identity automatically, and every task stores its `ownerId`. Reads query only that owner's tasks. The deployed `firestore.rules` require authentication, enforce ownership for reads/updates/deletes, and prevent changing a task's owner. All other collections are denied by default.
 
 The anonymous account is retained in the app's keychain. A different installation starts with its own empty task list; it can add tasks normally but cannot read the screenshot installation's tasks. Anonymous accounts are intended for this lab; account linking would be needed to recover tasks across devices or after losing the identity.
+
+## Verification and screenshot automation
+
+The five Swift Testing model tests passed on an iPhone 17 Pro simulator running iOS 26.5 with Xcode 27.1 on October 24, 2026. The submission archive includes the original Xcode result bundle and a readable test log.
+
+The separate `ArbeitEvidence` scheme exercises the live app and saves screenshots as Xcode test attachments. It creates the sample tasks “Complete Arbeit lab” and “Review Swift notes,” checks validation, marks a task complete, opens the delete confirmation, and verifies tasks remain after relaunch. Use the `Arbeit` scheme for the five required model tests.
+
+Keep simulator code signing enabled: Firebase Authentication needs the app's keychain access entitlement to save its anonymous identity. `Arbeit/Arbeit.entitlements` declares the app's keychain group.
