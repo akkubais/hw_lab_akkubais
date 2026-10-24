@@ -17,6 +17,15 @@ final class ArbeitEvidenceTests: XCTestCase {
     let app = XCUIApplication(bundleIdentifier: "edu.cmu.akkubais.Arbeit")
     app.launch()
     XCTAssertTrue(app.buttons["Add Task"].waitForExistence(timeout: 120))
+    for name in ["Complete Arbeit lab", "Review Swift notes"] {
+      while app.staticTexts[name].firstMatch.exists {
+        app.staticTexts[name].firstMatch.tap()
+        app.buttons["Delete Task"].tap()
+        XCTAssertTrue(app.buttons["Delete"].waitForExistence(timeout: 30))
+        app.buttons["Delete"].tap()
+        XCTAssertTrue(app.buttons["Add Task"].waitForExistence(timeout: 30))
+      }
+    }
     app.buttons["Add Task"].tap()
     XCTAssertTrue(app.textFields["Task Name"].waitForExistence(timeout: 30))
     app.buttons["Save"].tap()
@@ -41,7 +50,8 @@ final class ArbeitEvidenceTests: XCTestCase {
     capture("01_loaded_task_list")
     app.staticTexts["Complete Arbeit lab"].tap()
     XCTAssertTrue(app.switches["Completed"].waitForExistence(timeout: 30))
-    app.switches["Completed"].tap()
+    app.switches["Completed"].coordinate(withNormalizedOffset: CGVector(dx: 0.9, dy: 0.5)).tap()
+    XCTAssertEqual(app.switches["Completed"].value as? String, "1")
     capture("03_task_details_completed")
     app.buttons["Save"].tap()
     XCTAssertTrue(app.staticTexts["Complete Arbeit lab"].waitForExistence(timeout: 30))
@@ -50,8 +60,6 @@ final class ArbeitEvidenceTests: XCTestCase {
     app.buttons["Delete Task"].tap()
     XCTAssertTrue(app.buttons["Delete"].waitForExistence(timeout: 30))
     capture("06_delete_confirmation")
-    app.buttons["Cancel"].tap()
-    app.navigationBars.buttons.element(boundBy: 0).tap()
     app.terminate()
     app.launch()
     XCTAssertTrue(app.staticTexts["Review Swift notes"].waitForExistence(timeout: 120))
