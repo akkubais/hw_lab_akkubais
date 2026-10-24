@@ -1,50 +1,34 @@
-# TempConverter — SwiftUI Lab
+# Lab 07: Arbeit Task Manager
 
-TempConverter is an iOS SwiftUI app that converts temperatures between Celsius and Fahrenheit. Its main screen follows the layout and light-blue styling shown in the lab handout.
+Platform: Swift / SwiftUI
 
-## Lab requirements covered
+Repository: https://github.com/akkubais/hw_lab_akkubais
 
-- Numeric temperature input
-- Empty and invalid input validation
-- Celsius-to-Fahrenheit conversion
-- Fahrenheit-to-Celsius conversion
-- Native toggle switch for selecting the conversion direction
-- Separate info page presented through `NavigationView`
+Submission branch: `hw_lab7_Arbeit`
 
-## Run the app
+Arbeit stores tasks in Firebase Cloud Firestore. It supports a live task list, task creation, editing the name/assignee/due date, completion, and deletion through the details screen or a swipe gesture. The model, repository, view model, and views are separated into their own folders. Every explicit function and initializer has a comment explaining its purpose.
 
-1. Open `TempConverter.xcodeproj` in Xcode.
-2. Select an iPhone simulator from the run-destination menu.
-3. Press **Run** (`⌘R`).
-4. If Xcode asks for signing, select your team under **TempConverter → Signing & Capabilities**. Simulator builds normally do not require a team.
+## Open and run
 
-The deployment target is iOS 17.0.
+1. Open `Arbeit.xcodeproj` in Xcode.
+2. Allow Swift Package Manager to resolve Firebase Apple SDK 13.1.1 (Core, Firestore, and Auth).
+3. Select the Arbeit scheme and an iPhone simulator, then run.
+4. Run Product > Test (Command-U) for the five Swift Testing model tests.
 
-## Suggested screenshots
+The app bundle identifier is `edu.cmu.akkubais.Arbeit`. The Firebase configuration file belongs to this lab's Arbeit project. It is a client configuration, not an administrator credential. Database access is governed by Firestore security rules.
 
-Capture these states so the submission demonstrates every significant output:
+## Required model tests
 
-1. The initial converter screen.
-2. Celsius → Fahrenheit: enter `100`, tap **Convert Temperature**, and capture the `212 °F` result.
-3. Fahrenheit → Celsius: switch direction, enter `32`, tap **Convert Temperature**, and capture the `0 °C` result.
-4. Input validation: clear the field and tap **Convert Temperature** to capture the error message.
-5. Tap the info icon and capture the **Info** page.
+- Empty task name is rejected.
+- Empty assignee is rejected.
+- Both fields present is accepted.
+- Equality ignores document ID and completion status.
+- Tasks sort alphabetically by name.
 
-## Tests
+The equality test uses a fixed date to avoid timing-dependent comparisons. Hashing uses the same fields as equality. Whitespace-only names and assignees are rejected. The repository removes its snapshot listener when it is released and before starting a replacement listener. The New Task tab resets the form and returns to Tasks after saving.
 
-In Xcode, press `⌘U` to run the included unit tests. They cover both conversion formulas, negative/decimal input, comma decimal input, and invalid/empty values.
+## Restricted database access
 
-## GitHub submission
+This submission uses restricted access rather than the handout's temporary public test rules, as requested. Firebase Authentication assigns an anonymous identity automatically, and every task stores its `ownerId`. Reads query only that owner's tasks. The deployed `firestore.rules` require authentication, enforce ownership for reads/updates/deletes, and prevent changing a task's owner. All other collections are denied by default.
 
-Replace `YOUR_ANDREW_ID` with your actual Andrew ID:
-
-```sh
-git init
-git checkout -b hw_lab1_TempConverter
-git add .
-git commit -m "Complete TempConverter lab"
-git remote add origin https://github.com/YOUR_GITHUB_USERNAME/hw_lab_YOUR_ANDREW_ID.git
-git push -u origin hw_lab1_TempConverter
-```
-
-Create the GitHub repository with the exact name `hw_lab_<your_andrewid>`, share it with your assigned CA, and submit the repository link plus screenshots through Canvas.
+The anonymous account is retained in the app's keychain. A different installation starts with its own empty task list; it can add tasks normally but cannot read the screenshot installation's tasks. Anonymous accounts are intended for this lab; account linking would be needed to recover tasks across devices or after losing the identity.
