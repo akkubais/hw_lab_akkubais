@@ -1,0 +1,29 @@
+Actual Xcode test output — 31 October 2026
+Xcode 27.1; iPhone 17 Pro simulator, iOS 26.5
+
+◇ Test run started.
+↳ Testing Library Version: 2084
+↳ Target Platform: arm64-apple-ios17.0-simulator
+◇ Suite CarCoordinateTests started.
+◇ Test defaultInitializerIsZero() started.
+✔ Test defaultInitializerIsZero() passed after 0.001 seconds.
+◇ Test customInitializerStoresValues() started.
+✔ Test customInitializerStoresValues() passed after 0.001 seconds.
+◇ Test equalityWorks() started.
+✔ Test equalityWorks() passed after 0.001 seconds.
+◇ Test encodesAndDecodesRoundTrip() started.
+✔ Test encodesAndDecodesRoundTrip() passed after 0.112 seconds.
+✔ Suite CarCoordinateTests passed after 0.115 seconds.
+◇ Suite LocationManagerTests started.
+◇ Test startsWithZeroCoordinate() started.
+✔ Test startsWithZeroCoordinate() passed after 0.192 seconds.
+◇ Test clearLocationResetsCoordinate() started.
+✔ Test clearLocationResetsCoordinate() passed after 0.030 seconds.
+◇ Test deniedAuthorizationProducesError() started.
+✔ Test deniedAuthorizationProducesError() passed after 0.003 seconds.
+◇ Test loadsSavedCoordinate() started.
+✔ Test loadsSavedCoordinate() passed after 0.010 seconds.
+◇ Test corruptPlistReportsError() started.
+✔ Test corruptPlistReportsError() passed after 0.152 seconds.
+✔ Suite LocationManagerTests passed after 0.534 seconds.
+✔ Test run with 9 tests in 2 suites passed after 0.651 seconds.
